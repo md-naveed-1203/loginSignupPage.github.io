@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="styleMobile.css">
+    
+    <title>Naveed</title>
+
+
+
+        
+   
+</head>
+<body>
+   
+    <div class="parentContainer">
+        <div class="container">
+            <input type="checkbox" id="change">
+            <div class="cover" id="flip">
+                <div class="frontImg" >
+                    <img src="./ladyAtCafe.jpg" alt="img" id="fImg">
+                </div>
+                
+               
+            </div>
+            <div class="forms">
+               
+                <div class="loginform">
+                    <!-- <div class="check"><input type="checkbox" name="" id="flip"></div> -->
+                    <!--LOGIN FORM BEGIN HERE-->
+                        <form action="" class="login">
+                            <div class="name">
+                                <!--LOGIN Title-->
+                                <h3 class="Lname">LOGIN</h3>
+                            </div>
+                            <!--LOGIN FORM INPUT CONTINER-->
+                            <div class="formInput">
+                                <!--LOGIN USER NaME FIELD-->
+                                <div class="userName">
+                                    <input type="text" name="user" id="userL" required placeholder="Enter your username">
+                                </div>
+                                <!--LOGIN USER NaME FIELD-->
+
+
+                                <!--LOGIN PASSWORD FIELD-->
+                                    <div class="password">
+                                        <input type="password" name="passowrd" id="PassowrdL" required placeholder="Password">
+                                    </div>
+                                <!--LOGIN PASSWORD FIELD-->
+
+
+                                <!--FOROT PASSWORD FIELD-->
+                                    <div class="forgetlink">
+                                        <a href="#">Forgot passoword ?</a>
+                                        
+                                    </div>
+                                    <!--FOROT PASSWORD FIELD-->
+                                    
+                                 <!--LOGIN BUTTON FIELD-->
+                                    <div class="lBtn">
+                                        <button type="submit">LOGIN</button>
+                                    </div>
+                                    <!--LOGIN BUTTON FIELD-->
+                                    
+                                    <!--CREATE ACC LINK FIELD-->
+                                    
+                                    
+                                    <div class="buttomText"><p class="dontHave">Don't have an account ? <a class="create" href="#" onclick="rotate()"><label for="change">Create account</label></a></p></div>
+                                    
+                                    
+                                    <!--CREATE ACC LINK FIELD-->
+
+                            </div>
+                            <!--LOGIN FORM INPUT CONTINER-->
+                        
+                    </form>
+                </div>
+                <!---SIGN UP FORM BEGIN HERE-->
+                    <div class="SignUpform">
+                    <!--SIGN UP FORM CONTINER-->
+                        <form action="" class="signup">
+                            <!--SIN UP TITLE-->
+                            <div class="name">
+                            <h3 class="Sname">SIGN UP</h3>
+                            </div>
+                            <!--SIN UP TITLE-->
+
+                        <!--SIGN UP FORM INPUT FEILD-->
+                            <div class="formInput">
+                                <!--S USERNME INPUT-->
+                                    <div class="userName">
+                                        <input type="text" name="user" id="userS" required placeholder="Enter your name">
+                                        
+                                    </div>
+                                <!--S USERNME INPUT-->
+
+                                <!--S EMAIL INPUT-->
+                                    <div class="Email">
+                                        <input type="email" name="email" id="email id" required placeholder="Enter your email">
+                                        
+                                    </div>
+                                <!--S EMAIL INPUT-->
+
+                                <!--S PSSWORD INPUT-->
+                                <div class="password">
+                                    <input type="password" name="passowrd" id="PassowrdS" required placeholder="Enter your Password">
+                                    
+                                </div>
+                                <!--S PSSWORD INPUT-->
+                                
+                            
+                                <div class="sBtn">
+                                    <button type="submit">SIGN UP</button>
+                                </div>
+                                <div class="buttomText"><p>Already have an account ? <a href="#" onclick="rotateBack()"><label for="change">Login</label></a></p>
+                                </div>
+                                
+                            </div>
+                            <!--SIGN UP FORM INPUT FEILD-->
+                            
+                        </form>
+                        <!--SIGN UP FORM CONTINER-->
+                    </div>
+                 <!---SIGN UP FORM ENDS HERE-->    
+            </div>  
+
+           
+        </div>
+
+    </div>
+    <div class="circle"></div>
+        
+
+       <img src="" alt="" />
+       
+    
+
+</body>
+<script>
+
+function rotate(){
+     document.querySelector('.cover').style.transform='rotateY(-180deg)';
+     document.querySelector('.cover').style.transformOrigin='left';
+     document.querySelector('.cover').style.transition='all 1.5s ease';
+            
+        }
+
+        function rotateBack(){
+            document.querySelector('.cover').style.transform='rotateY(0deg)';
+            document.querySelector('.cover').style.transformOrigin='left';
+            document.querySelector('.cover').style.transition='all 1.5s ease';
+            
+        }
+
+       
+</script>
+</html>
